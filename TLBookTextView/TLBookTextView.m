@@ -2,7 +2,7 @@
 //  TLBookTextView.m
 //  TLBookTextView
 //
-//  Created by libin on 2019/9/19.
+//  Created by TL on 2019/9/19.
 //  Copyright © 2019年 yuanqutech. All rights reserved.
 //
 #define TLColor_RGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
