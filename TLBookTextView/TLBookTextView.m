@@ -77,8 +77,8 @@
         
         self.font = [UIFont systemFontOfSize:self.configuration.textFontFloat];
         NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
-        //(字间距) -（文本所占区域点高度 -文本点高度）
-        paragraphStyle.lineSpacing = (self.configuration.lineSpaceLineFloat -self.configuration.textFontFloat) -(self.font.lineHeight -self.configuration.textFontFloat);
+        //线条间距 - 文本所占高度
+        paragraphStyle.lineSpacing = self.configuration.lineSpaceLineFloat -self.font.lineHeight;
         paragraphStyle.firstLineHeadIndent = self.configuration.leftMarginFloat;
         NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:self.configuration.textFontFloat],
                                      NSParagraphStyleAttributeName:paragraphStyle,
